@@ -3,7 +3,7 @@
  * https://github.com/facebook/react-native
  * @flow
  */
-a
+a s
 import React, { Component } from 'react';
 import {
   Platform,
