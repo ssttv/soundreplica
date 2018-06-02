@@ -10,7 +10,17 @@ import {
   StyleSheet,
   Text,
   View
-} from 'react-native';
+} from 'react-native'
+import { createSwitchNavigator } from 'react-navigation';
+import HomeScreen from './screens/Home'
+import LoginScreen from './screens/Login'
+
+export default Switch = createSwitchNavigator({
+  Login: LoginScreen
+  Home: HomeScreen
+},{
+  initialRouteName: 'Login'
+})
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
