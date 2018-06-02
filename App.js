@@ -4,7 +4,7 @@
  * @flow
  */
 
-a v
+a v c
 import React, { Component } from 'react';
 import {
   Platform,
