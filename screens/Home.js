@@ -3,7 +3,7 @@ import {
   StyleSheet,
   View,
   Button
-} from 'react-Native'
+} from 'react-native'
 
 export default class HomeScreen extends Component {
   render() {
