@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    fles: 1,
+    flex: 1,
     backgroundColor: '#fff'
   }
 })
@@ -40,6 +40,11 @@ const styles = StyleSheet.create({
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
+  Song: SongScreen
+})
+
+const StreamStack = createStackNavigator({
+  Profile: StreamScreen,
   Song: SongScreen
 })
 
