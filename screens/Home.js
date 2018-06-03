@@ -5,13 +5,21 @@ import {
   Button
 } from 'react-native'
 
+static navigationOptions = {
+  headerTitle: 'Home',
+  headerTitleStyle: {
+    color: '#444',
+    fontWeight: 'normal'
+  }
+}
+
 export default class HomeScreen extends Component {
   render() {
     return(
       <View style={styles.container}>
         <Button
-          title='Long live the Home Screen'
-          onPress={()=> this.props.navigation.navigate('Stream')}
+          title='Play Song'
+          onPress={()=> this.props.navigation.navigate('Song')}
         />
       </View>
     );

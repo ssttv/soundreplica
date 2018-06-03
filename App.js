@@ -29,8 +29,8 @@ class SongScreen extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    justifyContent: 'center'
-    alignItems: 'center'
+    justifyContent: 'center',
+    alignItems: 'center',
     fles: 1,
     backgroundColor: '#fff'
   }
@@ -55,9 +55,9 @@ const ProfileStack = createStackNavigator({
 
 const Tabs = createBottomTabNavigator({
   Home: HomeScreen,
-  Stream: StreamScreen,
-  Search: SearchScreen,
-  Profile: ProfileScreen
+  Stream: StreamStack,
+  Search: SearchStack,
+  Profile: ProfileStack
 },{
   navigationOptions: ({ navigation }) => ({
     tabBarIcon: ({ tintColor }) => {
