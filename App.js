@@ -44,7 +44,7 @@ const HomeStack = createStackNavigator({
 })
 
 const StreamStack = createStackNavigator({
-  Profile: StreamScreen,
+  Stream: StreamScreen,
   Song: SongScreen
 })
 
