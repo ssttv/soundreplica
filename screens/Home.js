@@ -5,15 +5,14 @@ import {
   Button
 } from 'react-native'
 
-static navigationOptions = {
-  headerTitle: 'Home',
-  headerTitleStyle: {
-    color: '#444',
-    fontWeight: 'normal'
-  }
-}
-
 export default class HomeScreen extends Component {
+  static navigationOptions = {
+    headerTitle: 'Home',
+    headerTitleStyle: {
+      color: '#444',
+      fontWeight: 'normal'
+    }
+  }
   render() {
     return(
       <View style={styles.container}>
