@@ -11,7 +11,7 @@ export default class LoginScreen extends Component {
       <View style={styles.container}>
         <Button
           title='Peruse the Home Screen'
-          onPress={()=> this.props.navigate('Home')}
+          onPress={()=> this.props.navigation.navigate('Home')}
         />
       </View>
     );

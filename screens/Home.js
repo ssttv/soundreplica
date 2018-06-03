@@ -11,7 +11,7 @@ export default class HomeScreen extends Component {
       <View style={styles.container}>
         <Button
           title='Wrestle with the Login Screen'
-          onPress={()=> this.props.navigate('Login')}
+          onPress={()=> this.props.navigation.navigate('Login')}
         />
       </View>
     );
