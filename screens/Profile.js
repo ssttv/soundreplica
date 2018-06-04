@@ -6,12 +6,19 @@ import {
 } from 'react-native'
 
 export default class ProfileScreen extends Component {
+  static navigationOptions = {
+    headerTitle: 'Profile',
+    headerTitleStyle: {
+      color: '#444',
+      fontWeight: 'normal'
+    }
+  }
   render() {
     return(
       <View style={styles.container}>
         <Button
-          title='Long live the Profile Screen!'
-          onPress={() => this.props.navigation.navigate('Home')}
+          title='Play Song'
+          onPress={() => this.props.navigation.navigate('Song')}
         />
       </View>
     );

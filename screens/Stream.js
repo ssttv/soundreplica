@@ -6,12 +6,19 @@ import {
 } from 'react-native'
 
 export default class StreamScreen extends Component {
+  static navigationOptions = {
+    headerTitle: 'Stream',
+    headerTitleStyle: {
+      color: '#444',
+      fontWeight: 'normal'
+    }
+  }
   render() {
     return(
       <View style={styles.container}>
         <Button
-          title='Long live the Stream Screen!'
-          onPress={() => this.props.navigation.navigate('Search')}
+          title='Play Song'
+          onPress={() => this.props.navigation.navigate('Song')}
         />
       </View>
     );

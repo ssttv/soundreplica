@@ -20,7 +20,7 @@ class SongScreen extends Component {
       <View style={styles.container}>
         <Button
           title='Long live the Song Screen!'
-          onPress={()=> this.props.navigation.navigate('Home')}
+          onPress={()=> this.props.navigation.popToTop()}
         />
       </View>
     )
@@ -59,7 +59,7 @@ const ProfileStack = createStackNavigator({
 })
 
 const Tabs = createBottomTabNavigator({
-  Home: HomeScreen,
+  Home: HomeStack,
   Stream: StreamStack,
   Search: SearchStack,
   Profile: ProfileStack
