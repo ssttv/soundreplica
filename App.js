@@ -87,6 +87,36 @@ HomeStack.navigationOptions = ({ navigation }) => {
   return navigationOptions
 }
 
+
+StreamStack.navigationOptions = ({ navigation }) => {
+  let { routeName } = navigation.state.routes[navigation.state.index]
+  let navigationOptions = {}
+  if (routeName === 'Song') {
+    navigationOptions.tabBarVisible = false
+  }
+  return navigationOptions
+}
+
+
+SearchStack.navigationOptions = ({ navigation }) => {
+  let { routeName } = navigation.state.routes[navigation.state.index]
+  let navigationOptions = {}
+  if (routeName === 'Song') {
+    navigationOptions.tabBarVisible = false
+  }
+  return navigationOptions
+}
+
+
+ProfileStack.navigationOptions = ({ navigation }) => {
+  let { routeName } = navigation.state.routes[navigation.state.index]
+  let navigationOptions = {}
+  if (routeName === 'Song') {
+    navigationOptions.tabBarVisible = false
+  }
+  return navigationOptions
+}
+
 const Tabs = createBottomTabNavigator({
   Home: HomeStack,
   Stream: StreamStack,
