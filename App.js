@@ -70,7 +70,7 @@ class SongScreen extends Component {
           <Animated.Image
             source={require("./images/song-screen-image.jpg")}
             style={{
-              //marginLeft,
+              marginLeft,
               height: SCREEN_HEIGHT,
               width: SCREEN_WIDTH * 3,
               position: "absolute"
