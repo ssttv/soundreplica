@@ -27,7 +27,14 @@ import SearchScreen from './screens/Search'
 import StreamScreen from './screens/Stream'
 import ProfileScreen from './screens/Profile'
 
+const SCREEN_WIDTH = Dimensions.get("window").width
+
+const SCREEN_HEIGHT = Dimensions.get('window').height
+
 class SongScreen extends Component {
+  static navigationOptions = {
+    header: null
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -70,6 +77,15 @@ const ProfileStack = createStackNavigator({
   Profile: ProfileScreen,
   Song: SongScreen
 })
+
+HomeStack.navigationOptions = ({ navigation }) => {
+  let { routeName } = navigation.state.routes[navigation.state.index]
+  let navigationOptions = {}
+  if (routeName === 'Song') {
+    navigationOptions.tabBarVisible = false
+  }
+  return navigationOptions
+}
 
 const Tabs = createBottomTabNavigator({
   Home: HomeStack,
