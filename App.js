@@ -54,6 +54,10 @@ class SongScreen extends Component {
     ).start(() => this.animate())
   }
   render() {
+    marginLeft = this.animatedValue.interpolate({
+      inputRange: [0, 1],
+      outputRange: [0, -SCREEN_WIDTH * 2]
+    })
     return (
       <SafeAreaView>
         <View style={styles.container}>
