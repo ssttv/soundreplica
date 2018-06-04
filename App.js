@@ -3,9 +3,22 @@ import {
   StyleSheet,
   Text,
   Button,
-  View
+  View,
+  Image,
+  Animated,
+  PanResponder,
+  Dimensions,
+  Easing,
+  TouchableOpacity,
+  SafeAreaView
 } from 'react-native'
-import { createSwitchNavigator, createBottomTabNavigator, createStackNavigator } from 'react-navigation'
+import {
+  createSwitchNavigator,
+  createBottomTabNavigator,
+  createStackNavigator
+} from 'react-navigation'
+import Ionicons from 'react-native-vector-icons/Ionicons'
+import Feather from 'react-native-vector-icons/Feather'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import HomeScreen from './screens/Home'
