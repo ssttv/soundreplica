@@ -82,10 +82,10 @@ class SongScreen extends Component {
             </TouchableOpacity>
             <View>
               <TouchableOpacity>
-                <Text style={style.upperSongTitle}>Eternity</Text>
+                <Text style={styles.upperSongTitle}>Eternity</Text>
               </TouchableOpacity>
               <TouchableOpacity>
-                <Text style={style.upperArtistName}>Dronny</Text>
+                <Text style={styles.upperArtistName}>Dronny</Text>
               </TouchableOpacity>
             </View>
             <TouchableOpacity>
@@ -95,10 +95,10 @@ class SongScreen extends Component {
           <Animated.View style={styles.upperIcons}>
             <Animated.View style={styles.upperLeftIcons}>
               <TouchableOpacity>
-                <Text style={style.artistName}>Dronny</Text>
+                <Text style={styles.artistName}>Dronny</Text>
               </TouchableOpacity>
               <TouchableOpacity>
-                <Text style={style.songTitle}>Eternity</Text>
+                <Text style={styles.songTitle}>Eternity</Text>
               </TouchableOpacity>
             </Animated.View>
             <Animated.View>
@@ -110,7 +110,7 @@ class SongScreen extends Component {
           <Animated.View style={styles.lowerIcons}>
             <Animated.View style={styles.lowerIconsWrapper}>
               <TouchableOpacity style={styles.likes}>
-                <MaterialCommunityIcons name={'heart'} size=[25] style={{ color: 'white' }}/>
+                <MaterialCommunityIcons name={'heart'} size={25} style={{ color: 'white' }}/>
                 <Text style={{color: 'white'}}>1,414</Text>
               </TouchableOpacity>
               <TouchableOpacity>
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
   imageContainer: {
     position: 'absolute',
     left: 0,
-    reight: 0,
+    right: 0,
     height: SCREEN_HEIGHT
   },
   upperMostIcons: {
@@ -151,12 +151,12 @@ const styles = StyleSheet.create({
   },
   upperArtistName: {
     color: 'white',
-    textDecorationLine: 'underline'
+    textDecorationLine: 'underline',
     fontWeight: 'bold'
   },
   upperIcons: {
     flexDirection: 'row',
-    jusctifyContent: 'space-between'
+    justifyContent: 'space-between'
   },
   upperLeftIcons: {
     flexDirection: 'column'
@@ -170,14 +170,14 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline'
   },
   songTitle: {
-    backgroundColor: '#000'
+    backgroundColor: '#000',
     marginLeft: 15,
     marginTop: 10,
     fontSize: 20,
     fontWeight: 'bold'
   },
   upperRightIcon: {
-    color: 'fff',
+    color: '#fff',
     marginRight: 10
   },
   lowerIcons: {
