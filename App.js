@@ -76,6 +76,54 @@ class SongScreen extends Component {
               position: "absolute"
             }}
           />
+          <Animated.View style={styles.upperMostIcons}>
+            <TouchableOpacity>
+              <MaterialIcons name='play-arrow' size={30} style={{color: 'white'}}/>
+            </TouchableOpacity>
+            <View>
+              <TouchableOpacity>
+                <Text style={style.upperSongTitle}>Eternity</Text>
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <Text style={style.upperArtistName}>Dronny</Text>
+              </TouchableOpacity>
+            </View>
+            <TouchableOpacity>
+              <MaterialCommunityIcons name='heart' size={20} style={{ color: 'white'}}/>
+            </TouchableOpacity>
+          </Animated.View>
+          <Animated.View style={styles.upperIcons}>
+            <Animated.View style={styles.upperLeftIcons}>
+              <TouchableOpacity>
+                <Text style={style.artistName}>Dronny</Text>
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <Text style={style.songTitle}>Eternity</Text>
+              </TouchableOpacity>
+            </Animated.View>
+            <Animated.View>
+              <TouchableOpacity>
+                <MaterialCommunityIcons name='chevron-down' size={40} style={styles.upperRightIcon}/>
+              </TouchableOpacity>
+            </Animated.View>
+          </Animated.View>
+          <Animated.View style={styles.lowerIcons}>
+            <Animated.View style={styles.lowerIconsWrapper}>
+              <TouchableOpacity style={styles.likes}>
+                <MaterialCommunityIcons name={'heart'} size=[25] style={{ color: 'white' }}/>
+                <Text style={{color: 'white'}}>1,414</Text>
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <FeatherIcons name={'share'} size={25} style={{ color: 'white'}}/>
+              </TouchableOpacity>
+            </Animated.View>
+            <TouchableOpacity>
+              <FeatherIcons name={'repeat-once'} size={25} style={{ color: 'white'}}/>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <FeatherIcons name={'more-horiz'} size={25} style={{ color: 'white'}}/>
+            </TouchableOpacity>
+          </Animated.View>
         </Animated.View>
       </SafeAreaView>
     );
