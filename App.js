@@ -37,7 +37,7 @@ class SongScreen extends Component {
   };
   constructor () {
     super()
-    this.animatedValue = new.Animated.Value(0)
+    this.animatedValue = new Animated.Value(0)
   }
   componentDidMount () {
     this.animate()
