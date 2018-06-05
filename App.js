@@ -49,7 +49,7 @@ class SongScreen extends Component {
       {
         toValue: 1,
         duration: 90000,
-        easing: Easing, linear
+        easing: Easing.linear
       }
     ).start(() => this.animate())
   }
