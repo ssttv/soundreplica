@@ -18,7 +18,7 @@ import {
   createStackNavigator
 } from "react-navigation";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import Feather from "react-native-vector-icons/Feather";
+import FeatherIcons from "react-native-vector-icons/Feather";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import HomeScreen from "./screens/Home";
@@ -118,10 +118,10 @@ class SongScreen extends Component {
               </TouchableOpacity>
             </Animated.View>
             <TouchableOpacity>
-              <FeatherIcons name={'repeat-once'} size={25} style={{ color: 'white'}}/>
+              <MaterialCommunityIcons name={'repeat-once'} size={25} style={{ color: 'white'}}/>
             </TouchableOpacity>
             <TouchableOpacity>
-              <FeatherIcons name={'more-horiz'} size={25} style={{ color: 'white'}}/>
+              <MaterialIcons name={'more-horiz'} size={25} style={{ color: 'white'}}/>
             </TouchableOpacity>
           </Animated.View>
         </Animated.View>
@@ -132,9 +132,9 @@ class SongScreen extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    flex: 1,
     backgroundColor: "#fff"
   },
   imageContainer: {
@@ -144,6 +144,12 @@ const styles = StyleSheet.create({
     height: SCREEN_HEIGHT
   },
   upperMostIcons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    margin: 12
+  },
+  songNameAndArtistName: {
     alignItems: 'center'
   },
   upperSongTitle: {
@@ -171,9 +177,10 @@ const styles = StyleSheet.create({
   },
   songTitle: {
     backgroundColor: '#000',
+    color: '#fff',
     marginLeft: 15,
     marginTop: 10,
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: 'bold'
   },
   upperRightIcon: {
