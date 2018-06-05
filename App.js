@@ -136,6 +136,63 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flex: 1,
     backgroundColor: "#fff"
+  },
+  imageContainer: {
+    position: 'absolute',
+    left: 0,
+    reight: 0,
+    height: SCREEN_HEIGHT
+  },
+  upperMostIcons: {
+    alignItems: 'center'
+  },
+  upperSongTitle: {
+    color: 'white'
+  },
+  upperArtistName: {
+    color: 'white',
+    textDecorationLine: 'underline'
+    fontWeight: 'bold'
+  },
+  upperIcons: {
+    flexDirection: 'row',
+    jusctifyContent: 'space-between'
+  },
+  upperLeftIcons: {
+    flexDirection: 'column'
+  },
+  artistName: {
+    backgroundColor: '#000',
+    color: '#fff',
+    marginLeft: 15,
+    fontSize: 20,
+    fontWeight: 'bold',
+    textDecorationLine: 'underline'
+  },
+  songTitle: {
+    backgroundColor: '#000'
+    marginLeft: 15,
+    marginTop: 10,
+    fontSize: 20,
+    fontWeight: 'bold'
+  },
+  upperRightIcon: {
+    color: 'fff',
+    marginRight: 10
+  },
+  lowerIcons: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    marginBottom: 40
+  },
+  lowerIconsWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+  },
+  likes: {
+    flexDirection: 'row',
+    alignItems: 'center'
   }
 });
 
