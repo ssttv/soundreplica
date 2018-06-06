@@ -144,11 +144,11 @@ class SongScreen extends Component {
 
         <View style={styles.songNameAndArtistName}>
           <TouchableOpacity>
-            <Text style={styles.upperSongTitle}>Eternity</Text>
+            <Text style={styles.upperSongTitle}>Gyre and Gimble</Text>
           </TouchableOpacity>
 
           <TouchableOpacity>
-            <Text style={styles.upperArtistName}>Stellardrone</Text>
+            <Text style={styles.upperArtistName}>Jabberwocky</Text>
           </TouchableOpacity>
         </View>
 
@@ -162,11 +162,11 @@ class SongScreen extends Component {
 
         <Animated.View style={styles.upperLeftIcons}>
           <TouchableOpacity>
-            <Text style={styles.artistName}>Stellardrone</Text>
+            <Text style={styles.artistName}>Jabberwocky</Text>
           </TouchableOpacity>
 
           <TouchableOpacity>
-            <Text style={styles.songTitle}>Eternity</Text>
+            <Text style={styles.songTitle}>Gyre and Gimble</Text>
           </TouchableOpacity>
         </Animated.View>
 
